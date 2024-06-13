@@ -17,17 +17,79 @@ main{
     background-color: black;
     height: calc(100vh - 100px);
     width: 100%;
-    padding: 20px 10px 10px 10;
+    overflow: auto;
 }
 
 footer{
     background-color: rgb(69, 69, 69);
-    height: 100px;
+    min-height: 80px;
     width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-container > .row{
+    margin: 0 auto;
 }
 /*Main*/
 
 /*Footer*/
+.flex-container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.icon-sx{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.icon-center{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.end-call{
+    display: flex;
+    background-color: rgb(147, 147, 147);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.icon > *{
+    display: block;
+
+}
+
+.icon > h5{
+    font-size: 14px;
+    margin: 15px 10px;
+}
+
+.icon > i{
+    font-size: 20px;
+}
+
+.arrow-icon{
+    font-size: 16px;
+}
+
+#share{
+    color:yellowgreen;
+}
+
+.close-call{
+    text-align: center;
+    color:rgb(205, 7, 7);
+}
 
 /*Debug*/
 .debug .main-section{
@@ -59,12 +121,27 @@ footer{
 .debug .row{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 50px;
+    justify-content: center;
+    min-width: 1150px;
+    padding: 70px 60px;
 }
 
-.debug .column{
-    background-color: blueviolet;
-    border: 2px dashed white;
-    width:200px;
-    height: 100px;
+.debug .bg-image{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.debug .name-tag{
+    position: absolute;
+    color: white;
+    background-color: rgba(187, 187, 187, 0.459);
+    text-align: center;
+    padding: 5px;
+    width: max-content;
+    border-radius: 5px;
+    bottom:0;
+    left:0;
 }
